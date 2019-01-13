@@ -1,19 +1,18 @@
 import React from 'react';
 
-const Card = (props) => (
-  <div className="card">
-    <div className="card-title">
-      {props.title || "no_title"}
-    </div>
-    <div className="card-content">
-      <div className="card-content-question">
-        {props.question || 'no_question'}
+const Card = (props) => {
+  console.log(props);
+  return (
+    <div className="card">
+      <div className="card-content">
+        <div className="card-content-question">
+          {props.content.question || 'no_question'}
+        </div>
       </div>
-      <div className="card-content-options">
-        {props.options || 'no_options'}
-      </div>
+      <form>
+        <input type="text" name = "answer" />
+      </form>
     </div>
-  </div>
-)
-
+  );
+}
 export default Card;

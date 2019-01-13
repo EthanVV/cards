@@ -3,9 +3,10 @@ html {
 }
 
 .card {
-  height: 30em;
-  width: 20em;
-  font-size: 2em;
+  height: 60rem;
+  width: 40rem;
+  font-size: 5rem;
   text-align: center;
   background: pink;
+  margin: 0.5em;
 }

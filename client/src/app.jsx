@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import DevNav from './components/dev-nav.jsx';
 import Card from './components/card/index.jsx';
+import testCards from './testCards.js';
 
 class App extends React.Component {
 
@@ -15,7 +16,9 @@ class App extends React.Component {
     return (
       <div>
         <DevNav />
-        <Card />
+        {testCards.map(x => 
+          <Card content={x} />
+        )}
       </div>
     )
   }
