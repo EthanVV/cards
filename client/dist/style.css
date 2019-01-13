@@ -1,0 +1,11 @@
+html {
+  font-size: 10px;
+}
+
+.card {
+  height: 30em;
+  width: 20em;
+  font-size: 2em;
+  text-align: center;
+  background: pink;
+}
